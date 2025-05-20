@@ -100,12 +100,14 @@ namespace wGestorPaqueteria.Services
             }
         }
 
-        public List<AsignacionPaquete> AsignacionesPaquetes()
+        public List<AsignacionPaquete> AsignacionesPaquetes(int idConductor)
         {
             var paquetes = new List<AsignacionPaquete>();
 
             using (var cmd = new SqlCommand("sp_Asignaciones", conn))
             {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@EmpleadoID",idConductor);
                 conn.Open();
                 using (var reader = cmd.ExecuteReader())
                 {

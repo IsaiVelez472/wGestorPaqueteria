@@ -75,12 +75,6 @@
     <Compile Include="Views\Paquetes\FormAgregarPaquete.Designer.cs">
       <DependentUpon>FormAgregarPaquete.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Paquetes\VistaDespachador.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\Paquetes\VistaDespachador.Designer.cs">
-      <DependentUpon>VistaDespachador.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\Paquetes\VistaPaquetes.cs">
       <SubType>Form</SubType>
     </Compile>
