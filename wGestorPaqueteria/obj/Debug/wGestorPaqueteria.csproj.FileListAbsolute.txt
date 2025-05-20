@@ -8,3 +8,6 @@ C:\Users\isaiv\source\repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGesto
 C:\Users\isaiv\source\repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.csproj.CoreCompileInputs.cache
 C:\Users\isaiv\source\repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.exe
 C:\Users\isaiv\source\repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.pdb
+C:\Users\isaiv\source\repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.Views.VistaPaquetes.resources
+C:\Users\isaiv\source\repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.Views.Productos.FormAgregarPaquete.resources
+C:\Users\isaiv\source\repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.Views.Paquetes.FormActualizarPaquete.resources

@@ -33,7 +33,7 @@ namespace wGestorPaqueteria
                 {
                     SesionUsuario.Actual = usuario;
                     this.Hide();
-                    new VistaProductos().Show();
+                    new VistaPaquetes().Show();
                 }
                 else
                 {

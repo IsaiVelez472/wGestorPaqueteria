@@ -1,3 +1,4 @@
+
 -- Crear base de datos
 CREATE DATABASE GestorPaqueteria;
 GO
@@ -8,64 +9,91 @@ GO
 -- Tabla de Roles
 CREATE TABLE Roles (
     IdRol INT PRIMARY KEY IDENTITY,
-    NombreRol NVARCHAR(50)
+    NombreRol NVARCHAR(50) NOT NULL
 );
 
 -- Tabla de Usuarios
 CREATE TABLE Usuarios (
     IdUsuario INT PRIMARY KEY IDENTITY,
-    Usuario NVARCHAR(50),
-    Clave NVARCHAR(50),
-    RolId INT FOREIGN KEY REFERENCES Roles(IdRol)
-);
-
--- Tabla de Productos
-CREATE TABLE Productos (
-    IdProducto INT PRIMARY KEY IDENTITY,
-    Nombre NVARCHAR(100),
-    Precio DECIMAL(10,2),
-    Stock INT
+    Usuario NVARCHAR(50) NOT NULL,
+    Clave NVARCHAR(50) NOT NULL,
+    RolId INT FOREIGN KEY REFERENCES Roles(IdRol) NOT NULL
 );
 
 -- Tabla de Clientes
 CREATE TABLE Clientes (
-    IdCliente INT PRIMARY KEY IDENTITY,
-    Nombre NVARCHAR(100),
+    ClienteID INT PRIMARY KEY IDENTITY,
+    Nombre NVARCHAR(100) NOT NULL,
     Telefono NVARCHAR(20),
-    Correo NVARCHAR(100)
+    Email NVARCHAR(100),
+    Direccion NVARCHAR(200)
 );
 
--- Tabla de Destinos
-CREATE TABLE Destinos (
-    IdDestino INT PRIMARY KEY IDENTITY,
-    Direccion NVARCHAR(200),
-    Ciudad NVARCHAR(100),
-    Pais NVARCHAR(100)
+-- Tabla de Empleados
+CREATE TABLE Empleados (
+    EmpleadoID INT PRIMARY KEY IDENTITY,
+    Nombre NVARCHAR(100) NOT NULL,
+    RolId INT FOREIGN KEY REFERENCES Roles(IdRol),
+    Telefono NVARCHAR(20)
 );
 
--- Tabla de Envíos
-CREATE TABLE Envios (
-    IdEnvio INT PRIMARY KEY IDENTITY,
-    FechaEnvio DATE,
-    ClienteId INT FOREIGN KEY REFERENCES Clientes(IdCliente),
-    DestinoId INT FOREIGN KEY REFERENCES Destinos(IdDestino),
-    ProductoId INT FOREIGN KEY REFERENCES Productos(IdProducto),
-    Cantidad INT,
-    Estado NVARCHAR(50) -- Ej: Pendiente, Enviado, Entregado
+-- Tabla de Paquetes
+CREATE TABLE Paquetes (
+    PaqueteID INT PRIMARY KEY IDENTITY,
+    NumeroSeguimiento NVARCHAR(50) UNIQUE NOT NULL,
+    Peso DECIMAL(10,2),
+    Dimensiones NVARCHAR(100),
+    ValorDeclarado DECIMAL(10,2),
+    Estado NVARCHAR(20) CHECK (Estado IN ('Recibido', 'En tránsito', 'Entregado')),
+    RemitenteID INT FOREIGN KEY REFERENCES Clientes(ClienteID),
+    DestinatarioID INT FOREIGN KEY REFERENCES Clientes(ClienteID)
 );
 
--- Datos iniciales
-INSERT INTO Roles (NombreRol) VALUES
-('Administrador'),
-('Empleado');
+-- Tabla de Seguimiento
+CREATE TABLE Seguimiento (
+    SeguimientoID INT PRIMARY KEY IDENTITY,
+    PaqueteID INT FOREIGN KEY REFERENCES Paquetes(PaqueteID),
+    FechaEvento DATETIME,
+    DescripcionEvento NVARCHAR(200),
+    Ubicacion NVARCHAR(200)
+);
 
-INSERT INTO Usuarios (Usuario, Clave, RolId) VALUES
-('admin', 'admin123', 1),
-('empleado1', 'paquete2024', 2);
+-- Tabla de Asignaciones
+CREATE TABLE Asignaciones (
+    AsignacionID INT PRIMARY KEY IDENTITY,
+    PaqueteID INT FOREIGN KEY REFERENCES Paquetes(PaqueteID) UNIQUE,
+    EmpleadoID INT FOREIGN KEY REFERENCES Empleados(EmpleadoID),
+    FechaAsignacion DATETIME DEFAULT GETDATE()
+);
+
+
+-- Constraints
+ALTER TABLE Seguimiento
+ADD CONSTRAINT FK_Seguimientos_Paquetes
+FOREIGN KEY (PaqueteID)
+REFERENCES Paquetes(PaqueteID)
+ON DELETE CASCADE;
+
+ALTER TABLE Asignaciones
+ADD CONSTRAINT FK_Asignaciones_Paquetes
+FOREIGN KEY (PaqueteID)
+REFERENCES Paquetes(PaqueteID)
+ON DELETE CASCADE;
+
+ALTER TABLE Asignaciones
+ADD CONSTRAINT FK_Asignaciones_Empleado
+FOREIGN KEY (EmpleadoID)
+REFERENCES Empleados(EmpleadoID)
+ON DELETE CASCADE;
+
+ALTER TABLE Paquetes
+ADD CONSTRAINT FK_Paquetes_Remitente
+FOREIGN KEY (RemitenteID)
+REFERENCES Clientes(ClienteID)
+ON DELETE CASCADE;
 
 -- Procedimientos Almacenados
 
-GO
 -- Login
 CREATE PROCEDURE sp_Login
   @Usuario NVARCHAR(50),
@@ -79,124 +107,147 @@ BEGIN
 END;
 GO
 
--- Productos
-CREATE PROCEDURE sp_ListarProductos AS
-BEGIN
-    SELECT * FROM Productos
-END;
-GO
-
-CREATE PROCEDURE sp_InsertarProducto
-    @Nombre NVARCHAR(100),
-    @Precio DECIMAL(10,2),
-    @Stock INT
+-- Registrar Paquete
+CREATE PROCEDURE sp_RegistrarPaquete
+  @NumeroSeguimiento NVARCHAR(50),
+  @Peso DECIMAL(10,2),
+  @Dimensiones NVARCHAR(100),
+  @ValorDeclarado DECIMAL(10,2),
+  @RemitenteID INT,
+  @DestinatarioID INT
 AS
 BEGIN
-    INSERT INTO Productos (Nombre, Precio, Stock)
-    VALUES (@Nombre, @Precio, @Stock)
+  INSERT INTO Paquetes (NumeroSeguimiento, Peso, Dimensiones, ValorDeclarado, Estado, RemitenteID, DestinatarioID)
+  VALUES (@NumeroSeguimiento, @Peso, @Dimensiones, @ValorDeclarado, 'Recibido', @RemitenteID, @DestinatarioID)
 END;
 GO
 
-CREATE PROCEDURE sp_ActualizarProducto
-    @IdProducto INT,
-    @Nombre NVARCHAR(100),
-    @Precio DECIMAL(10,2),
-    @Stock INT
+-- Eliminar paquete
+CREATE PROCEDURE sp_EliminarPaquete
+    @IdPaquete INT
 AS
 BEGIN
-    UPDATE Productos
-    SET Nombre = @Nombre, Precio = @Precio, Stock = @Stock
-    WHERE IdProducto = @IdProducto
+    DELETE FROM Paquetes WHERE PaqueteID = @IdPaquete
 END;
 GO
 
-CREATE PROCEDURE sp_EliminarProducto
-    @IdProducto INT
+-- Cambiar estado de paquete
+CREATE PROCEDURE sp_CambiarEstadoPaquete
+  @PaqueteID INT,
+  @NuevoEstado NVARCHAR(20)
 AS
 BEGIN
-    DELETE FROM Productos WHERE IdProducto = @IdProducto
+  UPDATE Paquetes
+  SET Estado = @NuevoEstado
+  WHERE PaqueteID = @PaqueteID
 END;
 GO
 
--- Envíos
-CREATE PROCEDURE sp_ListarEnvios AS
-BEGIN
-    SELECT e.IdEnvio, e.FechaEnvio, c.Nombre AS Cliente, d.Direccion, 
-           p.Nombre AS Producto, e.Cantidad, e.Estado
-    FROM Envios e
-    JOIN Clientes c ON e.ClienteId = c.IdCliente
-    JOIN Destinos d ON e.DestinoId = d.IdDestino
-    JOIN Productos p ON e.ProductoId = p.IdProducto
-END;
-GO
-
-CREATE PROCEDURE sp_InsertarEnvio
-    @FechaEnvio DATE,
-    @ClienteId INT,
-    @DestinoId INT,
-    @ProductoId INT,
-    @Cantidad INT,
-    @Estado NVARCHAR(50)
+-- Registrar evento de seguimiento
+CREATE PROCEDURE sp_RegistrarEventoSeguimiento
+  @PaqueteID INT,
+  @FechaEvento DATETIME,
+  @DescripcionEvento NVARCHAR(200),
+  @Ubicacion NVARCHAR(200)
 AS
 BEGIN
-    INSERT INTO Envios (FechaEnvio, ClienteId, DestinoId, ProductoId, Cantidad, Estado)
-    VALUES (@FechaEnvio, @ClienteId, @DestinoId, @ProductoId, @Cantidad, @Estado)
+  INSERT INTO Seguimiento (PaqueteID, FechaEvento, DescripcionEvento, Ubicacion)
+  VALUES (@PaqueteID, @FechaEvento, @DescripcionEvento, @Ubicacion)
 END;
 GO
 
-CREATE PROCEDURE sp_ActualizarEstadoEnvio
-    @IdEnvio INT,
-    @Estado NVARCHAR(50)
+-- Asignar paquete a conductor
+CREATE PROCEDURE sp_AsignarPaqueteConductor
+  @PaqueteID INT,
+  @EmpleadoID INT
 AS
 BEGIN
-    UPDATE Envios
-    SET Estado = @Estado
-    WHERE IdEnvio = @IdEnvio
+  IF EXISTS (SELECT 1 FROM Asignaciones WHERE PaqueteID = @PaqueteID)
+  BEGIN
+    RAISERROR('Este paquete ya ha sido asignado a un conductor.', 16, 1);
+    RETURN;
+  END
+
+  INSERT INTO Asignaciones (PaqueteID, EmpleadoID)
+  VALUES (@PaqueteID, @EmpleadoID)
 END;
 GO
 
-CREATE PROCEDURE sp_EliminarEnvio
-    @IdEnvio INT
+-- Generar reporte de envíos
+CREATE PROCEDURE sp_GenerarReporteEnvios
 AS
 BEGIN
-    DELETE FROM Envios WHERE IdEnvio = @IdEnvio
+  SELECT
+    p.NumeroSeguimiento,
+    p.Estado,
+    DATEDIFF(DAY, MIN(s.FechaEvento), MAX(s.FechaEvento)) AS DiasEntrega,
+    e.Nombre AS Conductor
+  FROM Paquetes p
+  LEFT JOIN Seguimiento s ON s.PaqueteID = p.PaqueteID
+  LEFT JOIN Asignaciones a ON a.PaqueteID = p.PaqueteID
+  LEFT JOIN Empleados e ON e.EmpleadoID = a.EmpleadoID
+  WHERE p.Estado = 'Entregado'
+  GROUP BY p.NumeroSeguimiento, p.Estado, e.Nombre
 END;
 GO
 
--- TRIGGERS para manejo automático del stock
+-- Datos Iniciales
+INSERT INTO Roles (NombreRol) VALUES ('Administrador'), ('Despachador'), ('Conductor');
 
--- Disminuir stock al insertar un envío
-CREATE TRIGGER trg_RestarStock_Insert
-ON Envios
-AFTER INSERT
-AS
-BEGIN
-    UPDATE p
-    SET p.Stock = p.Stock - i.Cantidad
-    FROM Productos p
-    JOIN inserted i ON p.IdProducto = i.ProductoId
-END;
-GO
+INSERT INTO Usuarios (Usuario, Clave, RolId) VALUES ('admin', 'admin123', 1);
 
--- Ajustar stock al actualizar un envío
-CREATE TRIGGER trg_AjustarStock_Update
-ON Envios
-AFTER UPDATE
-AS
-BEGIN
-    -- Revertir el stock anterior
-    UPDATE p
-    SET p.Stock = p.Stock + d.Cantidad
-    FROM Productos p
-    JOIN deleted d ON p.IdProducto = d.ProductoId;
+INSERT INTO Empleados (Nombre, Telefono, RolId) VALUES
+('Carlos Torres', '3001234567', 1), -- Administrador
+('Laura Gómez', '3012345678', 2),   -- Despachadora
+('Luis Pérez', '3023456789', 3);    -- Conductor
 
-    -- Aplicar la nueva cantidad
-    UPDATE p
-    SET p.Stock = p.Stock - i.Cantidad
-    FROM Productos p
-    JOIN inserted i ON p.IdProducto = i.ProductoId;
-END;
-GO
+INSERT INTO Clientes (Nombre, Telefono, Email, Direccion) VALUES
+('Ana Martínez', '3109876543', 'ana.martinez@email.com', 'Calle 10 #20-30, Bogotá'),
+('Jorge Ramírez', '3118765432', 'jorge.ramirez@email.com', 'Cra 45 #50-60, Medellín');
+
+INSERT INTO Paquetes (NumeroSeguimiento, Peso, Dimensiones, ValorDeclarado, Estado, RemitenteID, DestinatarioID) VALUES
+('PKG001', 2.5, '30x20x15', 150000, 'Recibido', 1, 2),
+('PKG002', 1.2, '25x15x10', 75000, 'Recibido', 2, 1);
+
+INSERT INTO Asignaciones (PaqueteID, EmpleadoID, FechaAsignacion) VALUES
+(3, 3, GETDATE()),
+(4, 3, GETDATE());
+
+-- Evento de recepción
+INSERT INTO Seguimiento (PaqueteID, FechaEvento, DescripcionEvento, Ubicacion) VALUES
+(3, GETDATE(), 'Paquete recibido en oficina principal', 'Bogotá'),
+(4, GETDATE(), 'Paquete recibido en oficina principal', 'Medellín');
+
+-- Evento de despacho
+INSERT INTO Seguimiento (PaqueteID, FechaEvento, DescripcionEvento, Ubicacion) VALUES
+(3, DATEADD(HOUR, 3, GETDATE()), 'Despachado hacia destino', 'Ruta Bogotá-Medellín');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------Datos de pruebas------------------
 
 -- Ejecutar prueba de login
 EXEC sp_Login @Usuario = 'admin', @Clave = 'admin123';
+
+select * from Roles;
+select * from Usuarios;
+select * from Clientes;
+select * from Empleados;
+select * from Paquetes;
+select * from Asignaciones;
+select * from Seguimiento;
+
+delete from Asignaciones;
+delete from Seguimiento;
+delete from Paquetes;
