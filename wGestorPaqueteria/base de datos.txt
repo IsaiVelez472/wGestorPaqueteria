@@ -75,15 +75,15 @@ REFERENCES Paquetes(PaqueteID)
 ON DELETE CASCADE;
 
 ALTER TABLE Asignaciones
-ADD CONSTRAINT FK_Asignaciones_Paquetes
-FOREIGN KEY (PaqueteID)
-REFERENCES Paquetes(PaqueteID)
-ON DELETE CASCADE;
-
-ALTER TABLE Asignaciones
 ADD CONSTRAINT FK_Asignaciones_Empleado
 FOREIGN KEY (EmpleadoID)
 REFERENCES Empleados(EmpleadoID)
+ON DELETE CASCADE;
+
+ALTER TABLE Asignaciones
+ADD CONSTRAINT FK_Asignaciones_Paquetes
+FOREIGN KEY (PaqueteID)
+REFERENCES Paquetes(PaqueteID)
 ON DELETE CASCADE;
 
 ALTER TABLE Paquetes
