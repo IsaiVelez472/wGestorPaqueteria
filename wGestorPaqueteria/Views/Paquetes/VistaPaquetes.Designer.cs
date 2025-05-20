@@ -41,9 +41,13 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
+            this.pnlClientes = new System.Windows.Forms.Panel();
+            this.dtgvClientes = new System.Windows.Forms.DataGridView();
             this.panelHeader.SuspendLayout();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPaquetes)).BeginInit();
+            this.pnlClientes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -224,12 +228,41 @@
             this.btnActualizar.UseVisualStyleBackColor = false;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
+            // pnlClientes
+            // 
+            this.pnlClientes.Controls.Add(this.dtgvClientes);
+            this.pnlClientes.Location = new System.Drawing.Point(180, 50);
+            this.pnlClientes.Name = "pnlClientes";
+            this.pnlClientes.Size = new System.Drawing.Size(620, 420);
+            this.pnlClientes.TabIndex = 6;
+            this.pnlClientes.Visible = false;
+            // 
+            // dtgvClientes
+            // 
+            this.dtgvClientes.AllowUserToAddRows = false;
+            this.dtgvClientes.AllowUserToDeleteRows = false;
+            this.dtgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvClientes.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dtgvClientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvClientes.Location = new System.Drawing.Point(25, 20);
+            this.dtgvClientes.MultiSelect = false;
+            this.dtgvClientes.Name = "dtgvClientes";
+            this.dtgvClientes.ReadOnly = true;
+            this.dtgvClientes.RowHeadersVisible = false;
+            this.dtgvClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvClientes.Size = new System.Drawing.Size(570, 320);
+            this.dtgvClientes.TabIndex = 6;
+            this.dtgvClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvClientes_CellContentClick);
+            this.dtgvClientes.SelectionChanged += new System.EventHandler(this.dtgvClientes_SelectionChanged);
+            // 
             // VistaPaquetes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 470);
+            this.Controls.Add(this.pnlClientes);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.panelMenu);
@@ -242,10 +275,13 @@
             this.Name = "VistaPaquetes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestión de Paquetes";
+            this.Load += new System.EventHandler(this.VistaPaquetes_Load);
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
             this.panelMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPaquetes)).EndInit();
+            this.pnlClientes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvClientes)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -265,5 +301,7 @@
         private System.Windows.Forms.Button btnModuloSeguimiento;
         private System.Windows.Forms.Button btnModuloAsignaciones;
         private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Panel pnlClientes;
+        private System.Windows.Forms.DataGridView dtgvClientes;
     }
 }

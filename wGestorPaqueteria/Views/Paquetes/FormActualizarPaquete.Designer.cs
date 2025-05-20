@@ -234,6 +234,7 @@
             this.Controls.Add(this.btnCancelar);
             this.Name = "FormActualizarPaquete";
             this.Text = "Actualizar Paquete";
+            this.Load += new System.EventHandler(this.FormActualizarPaquete_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -13,11 +13,14 @@ namespace wGestorPaqueteria.Views
     public partial class VistaPaquetes : Form
     {
         private PaqueteService _paqueteService;
+        private ClienteService _clienteService;
+        private Usuario usuario = SesionUsuario.Actual;
 
         public VistaPaquetes()
         {
             InitializeComponent();
             _paqueteService = new PaqueteService();
+            _clienteService = new ClienteService();
 
             btnEliminar.Enabled = false; // Desactivado por defecto
             btnActualizar.Enabled = false; // Desactivado por defecto
@@ -27,6 +30,7 @@ namespace wGestorPaqueteria.Views
 
             CargarProductos();
             MostrarInfoUsuario();
+            CambiarVista();
         }
 
         private void CargarProductos()
@@ -34,11 +38,36 @@ namespace wGestorPaqueteria.Views
             try
             {
                 List<Paquete> paquetes = _paqueteService.ListarPaquetes();
+                List<Cliente> usuarios = _clienteService.ObtenerClientes();
                 dgvPaquetes.DataSource = paquetes;
+                dtgvClientes.DataSource = usuarios;
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al cargar paquetes: " + ex.Message);
+            }
+        }
+
+        private void CambiarVista()
+        {
+            MessageBox.Show(usuario.Rol.ToString());
+            if (usuario.Rol == "Administrador")
+            {
+
+                btnEliminar.Visible = true;
+                btnModuloClientes.Visible = true;
+            }
+            else if (usuario.Rol == "Despachador") // Por ejemplo: empleado
+            {
+                btnEliminar.Visible = false;
+                btnModuloClientes.Visible = false;
+            }
+            else if(usuario.Rol == "Conductor")
+            {
+                btnEliminar.Visible = false;
+                btnModuloClientes.Visible = false;
+                btnModuloAsignaciones.Enabled = true;
+                btnModuloSeguimiento.Enabled = true;
             }
         }
 
@@ -48,9 +77,14 @@ namespace wGestorPaqueteria.Views
             new FormAgregarPaquete().Show();
         }
 
+        private void btnAgregarCliente_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (dgvPaquetes.SelectedRows.Count > 0)
+            if (dgvPaquetes.SelectedRows.Count > 0 && (usuario.Rol == "Administrador"))
             {
                 var result = MessageBox.Show("¿Estás seguro de eliminar este paquete?", "Confirmación", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
@@ -71,6 +105,10 @@ namespace wGestorPaqueteria.Views
                 }
             }
         }
+        private void btnEliminarCliente_Click(object sender, EventArgs e)
+        {
+            
+        }
 
         private void MostrarInfoUsuario()
         {
@@ -82,19 +120,20 @@ namespace wGestorPaqueteria.Views
         }
 
         private void dgvProductos_SelectionChanged(object sender, EventArgs e)
-        {
-            btnEliminar.Enabled = dgvPaquetes.SelectedRows.Count > 0;
+        { 
+            btnEliminar.Enabled =  (usuario.Rol == "Administrador") && dgvPaquetes.SelectedRows.Count > 0  ;
             btnActualizar.Enabled = dgvPaquetes.SelectedRows.Count > 0;
         }
-
-        private void btnModuloPaquetes_Click(object sender, EventArgs e)
+        private void dtgvClientes_SelectionChanged(object sender, EventArgs e)
         {
-
+            btnEliminar.Enabled = dtgvClientes.SelectedRows.Count > 0 ;
+            btnActualizar.Enabled = dtgvClientes.SelectedRows.Count > 0;
         }
 
+        
         private void btnModuloClientes_Click(object sender, EventArgs e)
         {
-
+            pnlClientes.Visible = (usuario.Rol == "Administrador");
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
@@ -113,5 +152,23 @@ namespace wGestorPaqueteria.Views
                 MessageBox.Show("Selecciona un paquete para actualizar.");
             }
         }
+
+
+        private void VistaPaquetes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtgvClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnModuloPaquetes_Click(object sender, EventArgs e)
+        {
+            pnlClientes.Visible=false;
+        }
+
+        
     }
 }

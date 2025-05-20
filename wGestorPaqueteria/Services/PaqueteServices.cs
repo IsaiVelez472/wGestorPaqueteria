@@ -3,6 +3,7 @@ using System.Data.SqlClient;
 using System.Data;
 using wGestorPaqueteria.Entities;
 using wGestorPaqueteria.Utils;
+using System.Windows.Forms;
 
 namespace wGestorPaqueteria.Services
 {
@@ -97,6 +98,43 @@ namespace wGestorPaqueteria.Services
             {
                 conn.Close();
             }
+        }
+
+        public List<AsignacionPaquete> AsignacionesPaquetes()
+        {
+            var paquetes = new List<AsignacionPaquete>();
+
+            using (var cmd = new SqlCommand("sp_Asignaciones", conn))
+            {
+                conn.Open();
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        paquetes.Add(new AsignacionPaquete
+                        {
+                            AsignacionID = (int)reader["AsignacionID"],
+                            PaqueteID = (int)reader["PaqueteID"],
+                            NumeroSeguimiento = reader["NumeroSeguimiento"].ToString(),
+                            Estado = reader["Estado"].ToString(),
+
+                            // Remitente
+                            RemitenteID = (int)reader["RemitenteID"],
+                            RemitenteNombre = reader["RemitenteNombre"].ToString(),
+                            DireccionRemitente = reader["DireccionRemitente"].ToString(),
+
+                            // Destinatario
+                            DestinatarioID = (int)reader["DestinatarioID"],
+                            DestinatarioNombre = reader["DestinatarioNombre"].ToString(),
+                            DireccionDestinatario = reader["DireccionDestinatario"].ToString()
+                        });
+
+                    }
+                }
+                conn.Close();
+            }
+
+            return paquetes;
         }
     }
 }

@@ -11,3 +11,16 @@ C:\Users\isaiv\source\repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGesto
 C:\Users\isaiv\source\repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.Views.VistaPaquetes.resources
 C:\Users\isaiv\source\repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.Views.Productos.FormAgregarPaquete.resources
 C:\Users\isaiv\source\repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.Views.Paquetes.FormActualizarPaquete.resources
+C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\bin\Debug\wGestorPaqueteria.exe.config
+C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\bin\Debug\wGestorPaqueteria.exe
+C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\bin\Debug\wGestorPaqueteria.pdb
+C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.csproj.AssemblyReference.cache
+C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.FormLogin.resources
+C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.Properties.Resources.resources
+C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.Views.Paquetes.FormActualizarPaquete.resources
+C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.Views.Productos.FormAgregarPaquete.resources
+C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.Views.VistaPaquetes.resources
+C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.csproj.GenerateResource.cache
+C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.csproj.CoreCompileInputs.cache
+C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.exe
+C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.pdb

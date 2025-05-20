@@ -105,5 +105,10 @@ namespace wGestorPaqueteria.Views.Paquetes
             cmbEstado.Items.Add("Entregado");
             
         }
+
+        private void FormActualizarPaquete_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
