@@ -1,0 +1,10 @@
+C:\Users\isaiv\source\repos\wGestorPaqueteria\wGestorPaqueteria\bin\Debug\wGestorPaqueteria.exe.config
+C:\Users\isaiv\source\repos\wGestorPaqueteria\wGestorPaqueteria\bin\Debug\wGestorPaqueteria.exe
+C:\Users\isaiv\source\repos\wGestorPaqueteria\wGestorPaqueteria\bin\Debug\wGestorPaqueteria.pdb
+C:\Users\isaiv\source\repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.csproj.AssemblyReference.cache
+C:\Users\isaiv\source\repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.FormLogin.resources
+C:\Users\isaiv\source\repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.Properties.Resources.resources
+C:\Users\isaiv\source\repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.csproj.GenerateResource.cache
+C:\Users\isaiv\source\repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.csproj.CoreCompileInputs.cache
+C:\Users\isaiv\source\repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.exe
+C:\Users\isaiv\source\repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.pdb

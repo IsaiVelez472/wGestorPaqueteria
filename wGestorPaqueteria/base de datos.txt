@@ -1,0 +1,202 @@
+-- Crear base de datos
+CREATE DATABASE GestorPaqueteria;
+GO
+
+USE GestorPaqueteria;
+GO
+
+-- Tabla de Roles
+CREATE TABLE Roles (
+    IdRol INT PRIMARY KEY IDENTITY,
+    NombreRol NVARCHAR(50)
+);
+
+-- Tabla de Usuarios
+CREATE TABLE Usuarios (
+    IdUsuario INT PRIMARY KEY IDENTITY,
+    Usuario NVARCHAR(50),
+    Clave NVARCHAR(50),
+    RolId INT FOREIGN KEY REFERENCES Roles(IdRol)
+);
+
+-- Tabla de Productos
+CREATE TABLE Productos (
+    IdProducto INT PRIMARY KEY IDENTITY,
+    Nombre NVARCHAR(100),
+    Precio DECIMAL(10,2),
+    Stock INT
+);
+
+-- Tabla de Clientes
+CREATE TABLE Clientes (
+    IdCliente INT PRIMARY KEY IDENTITY,
+    Nombre NVARCHAR(100),
+    Telefono NVARCHAR(20),
+    Correo NVARCHAR(100)
+);
+
+-- Tabla de Destinos
+CREATE TABLE Destinos (
+    IdDestino INT PRIMARY KEY IDENTITY,
+    Direccion NVARCHAR(200),
+    Ciudad NVARCHAR(100),
+    Pais NVARCHAR(100)
+);
+
+-- Tabla de Envíos
+CREATE TABLE Envios (
+    IdEnvio INT PRIMARY KEY IDENTITY,
+    FechaEnvio DATE,
+    ClienteId INT FOREIGN KEY REFERENCES Clientes(IdCliente),
+    DestinoId INT FOREIGN KEY REFERENCES Destinos(IdDestino),
+    ProductoId INT FOREIGN KEY REFERENCES Productos(IdProducto),
+    Cantidad INT,
+    Estado NVARCHAR(50) -- Ej: Pendiente, Enviado, Entregado
+);
+
+-- Datos iniciales
+INSERT INTO Roles (NombreRol) VALUES
+('Administrador'),
+('Empleado');
+
+INSERT INTO Usuarios (Usuario, Clave, RolId) VALUES
+('admin', 'admin123', 1),
+('empleado1', 'paquete2024', 2);
+
+-- Procedimientos Almacenados
+
+GO
+-- Login
+CREATE PROCEDURE sp_Login
+  @Usuario NVARCHAR(50),
+  @Clave NVARCHAR(50)
+AS
+BEGIN
+  SELECT u.IdUsuario, u.Usuario, r.NombreRol
+  FROM Usuarios u
+  INNER JOIN Roles r ON u.RolId = r.IdRol
+  WHERE u.Usuario = @Usuario AND u.Clave = @Clave
+END;
+GO
+
+-- Productos
+CREATE PROCEDURE sp_ListarProductos AS
+BEGIN
+    SELECT * FROM Productos
+END;
+GO
+
+CREATE PROCEDURE sp_InsertarProducto
+    @Nombre NVARCHAR(100),
+    @Precio DECIMAL(10,2),
+    @Stock INT
+AS
+BEGIN
+    INSERT INTO Productos (Nombre, Precio, Stock)
+    VALUES (@Nombre, @Precio, @Stock)
+END;
+GO
+
+CREATE PROCEDURE sp_ActualizarProducto
+    @IdProducto INT,
+    @Nombre NVARCHAR(100),
+    @Precio DECIMAL(10,2),
+    @Stock INT
+AS
+BEGIN
+    UPDATE Productos
+    SET Nombre = @Nombre, Precio = @Precio, Stock = @Stock
+    WHERE IdProducto = @IdProducto
+END;
+GO
+
+CREATE PROCEDURE sp_EliminarProducto
+    @IdProducto INT
+AS
+BEGIN
+    DELETE FROM Productos WHERE IdProducto = @IdProducto
+END;
+GO
+
+-- Envíos
+CREATE PROCEDURE sp_ListarEnvios AS
+BEGIN
+    SELECT e.IdEnvio, e.FechaEnvio, c.Nombre AS Cliente, d.Direccion, 
+           p.Nombre AS Producto, e.Cantidad, e.Estado
+    FROM Envios e
+    JOIN Clientes c ON e.ClienteId = c.IdCliente
+    JOIN Destinos d ON e.DestinoId = d.IdDestino
+    JOIN Productos p ON e.ProductoId = p.IdProducto
+END;
+GO
+
+CREATE PROCEDURE sp_InsertarEnvio
+    @FechaEnvio DATE,
+    @ClienteId INT,
+    @DestinoId INT,
+    @ProductoId INT,
+    @Cantidad INT,
+    @Estado NVARCHAR(50)
+AS
+BEGIN
+    INSERT INTO Envios (FechaEnvio, ClienteId, DestinoId, ProductoId, Cantidad, Estado)
+    VALUES (@FechaEnvio, @ClienteId, @DestinoId, @ProductoId, @Cantidad, @Estado)
+END;
+GO
+
+CREATE PROCEDURE sp_ActualizarEstadoEnvio
+    @IdEnvio INT,
+    @Estado NVARCHAR(50)
+AS
+BEGIN
+    UPDATE Envios
+    SET Estado = @Estado
+    WHERE IdEnvio = @IdEnvio
+END;
+GO
+
+CREATE PROCEDURE sp_EliminarEnvio
+    @IdEnvio INT
+AS
+BEGIN
+    DELETE FROM Envios WHERE IdEnvio = @IdEnvio
+END;
+GO
+
+-- TRIGGERS para manejo automático del stock
+
+-- Disminuir stock al insertar un envío
+CREATE TRIGGER trg_RestarStock_Insert
+ON Envios
+AFTER INSERT
+AS
+BEGIN
+    UPDATE p
+    SET p.Stock = p.Stock - i.Cantidad
+    FROM Productos p
+    JOIN inserted i ON p.IdProducto = i.ProductoId
+END;
+GO
+
+-- Ajustar stock al actualizar un envío
+CREATE TRIGGER trg_AjustarStock_Update
+ON Envios
+AFTER UPDATE
+AS
+BEGIN
+    -- Revertir el stock anterior
+    UPDATE p
+    SET p.Stock = p.Stock + d.Cantidad
+    FROM Productos p
+    JOIN deleted d ON p.IdProducto = d.ProductoId;
+
+    -- Aplicar la nueva cantidad
+    UPDATE p
+    SET p.Stock = p.Stock - i.Cantidad
+    FROM Productos p
+    JOIN inserted i ON p.IdProducto = i.ProductoId;
+END;
+GO
+
+-- Ejecutar prueba de login
+EXEC sp_Login @Usuario = 'admin', @Clave = 'admin123';

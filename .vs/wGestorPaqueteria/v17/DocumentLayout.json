@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\isaiv\\source\\repos\\wGestorPaqueteria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|c:\\users\\isaiv\\source\\repos\\wgestorpaqueteria\\wgestorpaqueteria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|c:\\users\\isaiv\\source\\repos\\wgestorpaqueteria\\wgestorpaqueteria\\views\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\views\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|c:\\users\\isaiv\\source\\repos\\wgestorpaqueteria\\wgestorpaqueteria\\views\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\views\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|c:\\users\\isaiv\\source\\repos\\wgestorpaqueteria\\wgestorpaqueteria\\views\\vistaproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\views\\vistaproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|c:\\users\\isaiv\\source\\repos\\wgestorpaqueteria\\wgestorpaqueteria\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|c:\\users\\isaiv\\source\\repos\\wgestorpaqueteria\\wgestorpaqueteria\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|c:\\users\\isaiv\\source\\repos\\wgestorpaqueteria\\wgestorpaqueteria\\utils\\sesionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\utils\\sesionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|c:\\users\\isaiv\\source\\repos\\wgestorpaqueteria\\wgestorpaqueteria\\utils\\dbconnectionsingleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\utils\\dbconnectionsingleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,16 +38,93 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VistaProductos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\isaiv\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\VistaProductos.cs",
+              "RelativeDocumentMoniker": "wGestorPaqueteria\\Views\\VistaProductos.cs",
+              "ToolTip": "C:\\Users\\isaiv\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\VistaProductos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "wGestorPaqueteria\\Views\\VistaProductos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T05:54:17.076Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SesionUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\isaiv\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Utils\\SesionUsuario.cs",
+              "RelativeDocumentMoniker": "wGestorPaqueteria\\Utils\\SesionUsuario.cs",
+              "ToolTip": "C:\\Users\\isaiv\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Utils\\SesionUsuario.cs",
+              "RelativeToolTip": "wGestorPaqueteria\\Utils\\SesionUsuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T05:46:25.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DbConnectionSingleton.cs",
+              "DocumentMoniker": "C:\\Users\\isaiv\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Utils\\DbConnectionSingleton.cs",
+              "RelativeDocumentMoniker": "wGestorPaqueteria\\Utils\\DbConnectionSingleton.cs",
+              "ToolTip": "C:\\Users\\isaiv\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Utils\\DbConnectionSingleton.cs",
+              "RelativeToolTip": "wGestorPaqueteria\\Utils\\DbConnectionSingleton.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T05:44:29.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthServices.cs",
+              "DocumentMoniker": "C:\\Users\\isaiv\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Services\\AuthServices.cs",
+              "RelativeDocumentMoniker": "wGestorPaqueteria\\Services\\AuthServices.cs",
+              "ToolTip": "C:\\Users\\isaiv\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Services\\AuthServices.cs",
+              "RelativeToolTip": "wGestorPaqueteria\\Services\\AuthServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T05:42:32.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\isaiv\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Entities\\Usuario.cs",
+              "RelativeDocumentMoniker": "wGestorPaqueteria\\Entities\\Usuario.cs",
+              "ToolTip": "C:\\Users\\isaiv\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Entities\\Usuario.cs",
+              "RelativeToolTip": "wGestorPaqueteria\\Entities\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T05:32:59.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\isaiv\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Form1.cs",
-              "RelativeDocumentMoniker": "wGestorPaqueteria\\Form1.cs",
-              "ToolTip": "C:\\Users\\isaiv\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "wGestorPaqueteria\\Form1.cs [Dise\u00F1o]",
+              "Title": "FormLogin.cs",
+              "DocumentMoniker": "C:\\Users\\isaiv\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\FormLogin.cs",
+              "RelativeDocumentMoniker": "wGestorPaqueteria\\Views\\FormLogin.cs",
+              "ToolTip": "C:\\Users\\isaiv\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\FormLogin.cs",
+              "RelativeToolTip": "wGestorPaqueteria\\Views\\FormLogin.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAowCIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T05:20:43.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormLogin.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\isaiv\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\FormLogin.cs",
+              "RelativeDocumentMoniker": "wGestorPaqueteria\\Views\\FormLogin.cs",
+              "ToolTip": "C:\\Users\\isaiv\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\FormLogin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "wGestorPaqueteria\\Views\\FormLogin.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T04:25:33.248Z",
               "EditorCaption": " [Dise\u00F1o]"

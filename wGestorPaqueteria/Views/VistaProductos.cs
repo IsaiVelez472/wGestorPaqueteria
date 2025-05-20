@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace wGestorPaqueteria
+namespace wGestorPaqueteria.Views
 {
-    public partial class Form1 : Form
+    public partial class VistaProductos : Form
     {
-        public Form1()
+        public VistaProductos()
         {
             InitializeComponent();
         }
