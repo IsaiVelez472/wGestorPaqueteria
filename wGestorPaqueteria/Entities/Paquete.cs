@@ -1,4 +1,6 @@
-﻿namespace wGestorPaqueteria.Entities
+﻿using System;
+
+namespace wGestorPaqueteria.Entities
 {
     public class Paquete
     {
@@ -18,8 +20,10 @@
         public int PaqueteID { get; set; }
         public string NumeroSeguimiento { get; set; }
         public string Estado { get; set; }
+        public DateTime UltimaFechaEvento { get; set; }
 
         // Remitente
+
         public int RemitenteID { get; set; }
         public string RemitenteNombre { get; set; }
         public string DireccionRemitente { get; set; }

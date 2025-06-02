@@ -4,6 +4,7 @@ using System.Data;
 using wGestorPaqueteria.Entities;
 using wGestorPaqueteria.Utils;
 using System.Windows.Forms;
+using System;
 
 namespace wGestorPaqueteria.Services
 {
@@ -16,12 +17,13 @@ namespace wGestorPaqueteria.Services
             conn = DbConnectionSingleton.Instancia;
         }
 
-        public List<Paquete> ListarPaquetes()
+        public List<Paquete> ListarPaquetes(int? paqueteId = null)
         {
             var paquetes = new List<Paquete>();
 
-            using (var cmd = new SqlCommand("SELECT * FROM Paquetes", conn))
+            using (var cmd = new SqlCommand("SELECT * FROM Paquetes WHERE (@PaqueteID IS NULL OR PaqueteID = @PaqueteID) ", conn))
             {
+                cmd.Parameters.AddWithValue("@PaqueteID", (object)paqueteId ?? DBNull.Value);
                 conn.Open();
                 using (var reader = cmd.ExecuteReader())
                 {
@@ -100,14 +102,14 @@ namespace wGestorPaqueteria.Services
             }
         }
 
-        public List<AsignacionPaquete> AsignacionesPaquetes(int idConductor)
+        public List<AsignacionPaquete> ObtenerAsignaciones(int? empleadoId = null)
         {
             var paquetes = new List<AsignacionPaquete>();
 
-            using (var cmd = new SqlCommand("sp_Asignaciones", conn))
+            using (var cmd = new SqlCommand("SELECT * FROM Vista_PaquetesAsignados WHERE (@EmpleadoID IS NULL OR EmpleadoID = @EmpleadoID) ORDER BY UltimaFechaEvento DESC", conn))
             {
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@EmpleadoID",idConductor);
+                cmd.Parameters.AddWithValue("@EmpleadoID", (object)empleadoId ?? DBNull.Value);
+
                 conn.Open();
                 using (var reader = cmd.ExecuteReader())
                 {
@@ -119,24 +121,20 @@ namespace wGestorPaqueteria.Services
                             PaqueteID = (int)reader["PaqueteID"],
                             NumeroSeguimiento = reader["NumeroSeguimiento"].ToString(),
                             Estado = reader["Estado"].ToString(),
-
-                            // Remitente
+                            UltimaFechaEvento = (DateTime)reader["UltimaFechaEvento"],
                             RemitenteID = (int)reader["RemitenteID"],
                             RemitenteNombre = reader["RemitenteNombre"].ToString(),
                             DireccionRemitente = reader["DireccionRemitente"].ToString(),
-
-                            // Destinatario
                             DestinatarioID = (int)reader["DestinatarioID"],
                             DestinatarioNombre = reader["DestinatarioNombre"].ToString(),
                             DireccionDestinatario = reader["DireccionDestinatario"].ToString()
                         });
-
                     }
                 }
                 conn.Close();
             }
 
             return paquetes;
-        }
+        } 
     }
 }

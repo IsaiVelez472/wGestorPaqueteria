@@ -191,49 +191,6 @@ BEGIN
 END;
 GO
 
---Asignaciones
-
-CREATE PROCEDURE sp_Asignaciones
-  @EmpleadoID INT
-AS
-BEGIN
-SELECT 
-    a.AsignacionID,
-    a.PaqueteID,
-    p.NumeroSeguimiento,
-    p.Estado,
-    
-    -- Remitente
-    remitente.ClienteID AS RemitenteID,
-    remitente.Nombre AS RemitenteNombre,
-    remitente.Direccion AS DireccionRemitente,
-
-    -- Destinatario
-    destinatario.ClienteID AS DestinatarioID,
-    destinatario.Nombre AS DestinatarioNombre,
-    destinatario.Direccion AS DireccionDestinatario
-
-	FROM Asignaciones a
-	INNER JOIN Paquetes p ON a.PaqueteID = p.PaqueteID
-	INNER JOIN Clientes remitente ON p.RemitenteID = remitente.ClienteID
-	INNER JOIN Clientes destinatario ON p.DestinatarioID = destinatario.ClienteID
-	INNER JOIN Seguimiento s ON p.PaqueteID = s.PaqueteID
-	WHERE a.EmpleadoID = @EmpleadoID
-	GROUP BY 
-		a.AsignacionID,
-		a.PaqueteID,
-		p.NumeroSeguimiento,
-		p.Estado,
-		remitente.ClienteID,
-		remitente.Nombre,
-		remitente.Direccion,
-		destinatario.ClienteID,
-		destinatario.Nombre,
-		destinatario.Direccion
-ORDER BY MAX(s.FechaEvento), a.AsignacionID;
-END;
-GO
-
 -- Datos Iniciales
 INSERT INTO Roles (NombreRol) VALUES ('Administrador'), ('Despachador'), ('Conductor');
 
@@ -265,19 +222,6 @@ INSERT INTO Seguimiento (PaqueteID, FechaEvento, DescripcionEvento, Ubicacion) V
 INSERT INTO Seguimiento (PaqueteID, FechaEvento, DescripcionEvento, Ubicacion) VALUES
 (3, DATEADD(HOUR, 3, GETDATE()), 'Despachado hacia destino', 'Ruta Bogotá-Medellín');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ----------------------------------Datos de pruebas------------------
 
 -- Ejecutar prueba de login
@@ -294,3 +238,63 @@ select * from Seguimiento;
 delete from Asignaciones;
 delete from Seguimiento;
 delete from Paquetes;
+
+-- NUEVAS COSAS -------------------------------------------------------------------------------------------------------------
+
+--Agregar Cliente
+
+
+DROP PROCEDURE IF EXISTS sp_RegistrarEmpleado 
+GO
+
+CREATE PROCEDURE sp_Registrarcliente
+  @Nombre NVARCHAR(100),
+  @Telefono  NVARCHAR(20),
+  @Email NVARCHAR(100),
+  @Direccion NVARCHAR(200)
+AS
+BEGIN
+  INSERT INTO Clientes(Nombre, Telefono, Email, Direccion)
+  VALUES ( @Nombre, @Telefono, @Email, @Direccion)
+END;
+GO
+--Asignaciones
+
+CREATE VIEW Vista_PaquetesAsignados AS
+SELECT 
+    a.EmpleadoID,
+    a.AsignacionID,
+    a.PaqueteID,
+    p.NumeroSeguimiento,
+    p.Estado,
+
+    -- Fecha del último evento
+    MAX(s.FechaEvento) AS UltimaFechaEvento,
+
+    -- Remitente
+    remitente.ClienteID AS RemitenteID,
+    remitente.Nombre AS RemitenteNombre,
+    remitente.Direccion AS DireccionRemitente,
+
+    -- Destinatario
+    destinatario.ClienteID AS DestinatarioID,
+    destinatario.Nombre AS DestinatarioNombre,
+    destinatario.Direccion AS DireccionDestinatario
+
+FROM Asignaciones a
+INNER JOIN Paquetes p ON a.PaqueteID = p.PaqueteID
+INNER JOIN Clientes remitente ON p.RemitenteID = remitente.ClienteID
+INNER JOIN Clientes destinatario ON p.DestinatarioID = destinatario.ClienteID
+INNER JOIN Seguimiento s ON p.PaqueteID = s.PaqueteID
+GROUP BY 
+    a.EmpleadoID,
+    a.AsignacionID,
+    a.PaqueteID,
+    p.NumeroSeguimiento,
+    p.Estado,
+    remitente.ClienteID,
+    remitente.Nombre,
+    remitente.Direccion,
+    destinatario.ClienteID,
+    destinatario.Nombre,
+    destinatario.Direccion;

@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wgestorpaqueteria\\views\\paquetes\\vistapaquetes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\views\\paquetes\\vistapaquetes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|c:\\users\\hp\\source\\repos\\wgestorpaqueteria\\wgestorpaqueteria\\views\\paquetes\\vistapaquetes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wgestorpaqueteria\\views\\paquetes\\vistapaquetes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\views\\paquetes\\vistapaquetes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wgestorpaqueteria\\services\\paqueteservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\services\\paqueteservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wgestorpaqueteria\\entities\\paquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\entities\\paquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|c:\\users\\hp\\source\\repos\\wgestorpaqueteria\\wgestorpaqueteria\\views\\paquetes\\vistapaquetes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\views\\paquetes\\vistapaquetes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wgestorpaqueteria\\views\\paquetes\\formagregarpaquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\views\\paquetes\\formagregarpaquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|c:\\users\\hp\\source\\repos\\wgestorpaqueteria\\wgestorpaqueteria\\views\\paquetes\\formagregarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\views\\paquetes\\formagregarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|c:\\users\\hp\\source\\repos\\wgestorpaqueteria\\wgestorpaqueteria\\views\\paquetes\\formasignarpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\views\\paquetes\\formasignarpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|c:\\users\\hp\\source\\repos\\wgestorpaqueteria\\wgestorpaqueteria\\views\\paquetes\\formasignarpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\views\\paquetes\\formasignarpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|c:\\users\\hp\\source\\repos\\wgestorpaqueteria\\wgestorpaqueteria\\services\\paqueteservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\services\\paqueteservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormActualizarPaquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wGestorPaqueteria\\Views\\Paquetes\\FormActualizarPaquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wgestorpaqueteria\\views\\paquetes\\formactualizarpaquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -31,16 +43,48 @@
       "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\base de datos.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wgestorpaqueteria\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wgestorpaqueteria\\entities\\paquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\entities\\paquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|c:\\users\\hp\\source\\repos\\wgestorpaqueteria\\wgestorpaqueteria\\views\\paquetes\\formagregarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\views\\paquetes\\formagregarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|c:\\users\\hp\\source\\repos\\wgestorpaqueteria\\wgestorpaqueteria\\services\\empleadoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\services\\empleadoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wgestorpaqueteria\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wgestorpaqueteria\\services\\clienteservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\services\\clienteservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormActualizarPaquete.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wGestorPaqueteria\\Views\\Paquetes\\FormActualizarPaquete.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wgestorpaqueteria\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormActualizarPaquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wGestorPaqueteria\\Views\\Paquetes\\FormActualizarPaquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|c:\\users\\hp\\source\\repos\\wgestorpaqueteria\\wgestorpaqueteria\\entities\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\entities\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormAgregarPaquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wGestorPaqueteria\\Views\\Paquetes\\FormAgregarPaquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wgestorpaqueteria\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wgestorpaqueteria\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wgestorpaqueteria\\views\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,40 +95,16 @@
       "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\views\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wgestorpaqueteria\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wgestorpaqueteria\\utils\\sesionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\utils\\sesionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wgestorpaqueteria\\services\\clienteservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\services\\clienteservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wgestorpaqueteria\\utils\\dbconnectionsingleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\utils\\dbconnectionsingleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wgestorpaqueteria\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wgestorpaqueteria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wgestorpaqueteria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormAgregarPaquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wGestorPaqueteria\\Views\\Paquetes\\FormAgregarPaquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormAgregarPaquete.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wGestorPaqueteria\\Views\\Paquetes\\FormAgregarPaquete.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormActualizarPaquete.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|solutionrelative:wGestorPaqueteria\\Views\\Paquetes\\FormActualizarPaquete.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DEC230E-F3B4-4F1E-8DB4-4C45BE16545B}|wGestorPaqueteria\\wGestorPaqueteria.csproj|C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wgestorpaqueteria\\views\\paquetes\\formactualizarpaquete.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
@@ -98,7 +118,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 22,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -118,28 +138,116 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VistaPaquetes.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\VistaPaquetes.cs",
-              "RelativeDocumentMoniker": "wGestorPaqueteria\\Views\\Paquetes\\VistaPaquetes.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\VistaPaquetes.cs*",
-              "RelativeToolTip": "wGestorPaqueteria\\Views\\Paquetes\\VistaPaquetes.cs*",
-              "ViewState": "AgIAANQAAAAAAAAAAAAvwN4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T08:28:23.8Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "PaqueteServices.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Services\\PaqueteServices.cs",
               "RelativeDocumentMoniker": "wGestorPaqueteria\\Services\\PaqueteServices.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Services\\PaqueteServices.cs",
               "RelativeToolTip": "wGestorPaqueteria\\Services\\PaqueteServices.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAxwHoAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T16:45:36.946Z",
+              "WhenOpened": "2025-06-02T19:33:30.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormAsignarPedidos.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormAsignarPedidos.cs",
+              "RelativeDocumentMoniker": "wGestorPaqueteria\\Views\\Paquetes\\FormAsignarPedidos.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormAsignarPedidos.cs",
+              "RelativeToolTip": "wGestorPaqueteria\\Views\\Paquetes\\FormAsignarPedidos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T08:46:20.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormAsignarPedidos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormAsignarPedidos.cs",
+              "RelativeDocumentMoniker": "wGestorPaqueteria\\Views\\Paquetes\\FormAsignarPedidos.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormAsignarPedidos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "wGestorPaqueteria\\Views\\Paquetes\\FormAsignarPedidos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T08:45:21.695Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormAgregarCliente.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Source\\Repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormAgregarCliente.cs",
+              "RelativeDocumentMoniker": "wGestorPaqueteria\\Views\\Paquetes\\FormAgregarCliente.cs",
+              "ToolTip": "C:\\Users\\hp\\Source\\Repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormAgregarCliente.cs",
+              "RelativeToolTip": "wGestorPaqueteria\\Views\\Paquetes\\FormAgregarCliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T07:37:52.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormAgregarCliente.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\hp\\Source\\Repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormAgregarCliente.cs",
+              "RelativeDocumentMoniker": "wGestorPaqueteria\\Views\\Paquetes\\FormAgregarCliente.cs",
+              "ToolTip": "C:\\Users\\hp\\Source\\Repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormAgregarCliente.cs [Dise\u00F1o]",
+              "RelativeToolTip": "wGestorPaqueteria\\Views\\Paquetes\\FormAgregarCliente.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T07:36:03.2Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Empleado.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Entities\\Empleado.cs",
+              "RelativeDocumentMoniker": "wGestorPaqueteria\\Entities\\Empleado.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Entities\\Empleado.cs",
+              "RelativeToolTip": "wGestorPaqueteria\\Entities\\Empleado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T06:38:47.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EmpleadoService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Services\\EmpleadoService.cs",
+              "RelativeDocumentMoniker": "wGestorPaqueteria\\Services\\EmpleadoService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Services\\EmpleadoService.cs",
+              "RelativeToolTip": "wGestorPaqueteria\\Services\\EmpleadoService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAswBgAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T06:38:20.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VistaPaquetes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\VistaPaquetes.cs",
+              "RelativeDocumentMoniker": "wGestorPaqueteria\\Views\\Paquetes\\VistaPaquetes.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\VistaPaquetes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "wGestorPaqueteria\\Views\\Paquetes\\VistaPaquetes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T08:25:33.802Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VistaPaquetes.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\VistaPaquetes.cs",
+              "RelativeDocumentMoniker": "wGestorPaqueteria\\Views\\Paquetes\\VistaPaquetes.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\VistaPaquetes.cs",
+              "RelativeToolTip": "wGestorPaqueteria\\Views\\Paquetes\\VistaPaquetes.cs",
+              "ViewState": "AgIAADgBAAAAAAAAAAAQwHgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T08:28:23.8Z",
               "EditorCaption": ""
             },
             {
@@ -150,13 +258,14 @@
               "RelativeDocumentMoniker": "wGestorPaqueteria\\Services\\ClienteServices.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Services\\ClienteServices.cs",
               "RelativeToolTip": "wGestorPaqueteria\\Services\\ClienteServices.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAmwDgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T16:45:25.672Z"
+              "WhenOpened": "2025-05-20T16:45:25.672Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Entities\\Usuario.cs",
               "RelativeDocumentMoniker": "wGestorPaqueteria\\Entities\\Usuario.cs",
@@ -164,11 +273,12 @@
               "RelativeToolTip": "wGestorPaqueteria\\Entities\\Usuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T16:45:13.516Z"
+              "WhenOpened": "2025-05-20T16:45:13.516Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 13,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "wGestorPaqueteria\\Properties\\AssemblyInfo.cs",
@@ -176,11 +286,12 @@
               "RelativeToolTip": "wGestorPaqueteria\\Properties\\AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T16:23:46.014Z"
+              "WhenOpened": "2025-05-20T16:23:46.014Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Program.cs",
               "RelativeDocumentMoniker": "wGestorPaqueteria\\Program.cs",
@@ -192,42 +303,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 21,
               "Title": "FormLogin.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\FormLogin.cs",
               "RelativeDocumentMoniker": "wGestorPaqueteria\\Views\\FormLogin.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\FormLogin.cs",
               "RelativeToolTip": "wGestorPaqueteria\\Views\\FormLogin.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAtwCAAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAtwCMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T16:21:43.193Z"
+              "WhenOpened": "2025-05-20T16:21:43.193Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 19,
               "Title": "AuthServices.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Services\\AuthServices.cs",
               "RelativeDocumentMoniker": "wGestorPaqueteria\\Services\\AuthServices.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Services\\AuthServices.cs",
               "RelativeToolTip": "wGestorPaqueteria\\Services\\AuthServices.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T16:19:29.76Z"
+              "WhenOpened": "2025-05-20T16:19:29.76Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 22,
               "Title": "FormLogin.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\FormLogin.cs",
               "RelativeDocumentMoniker": "wGestorPaqueteria\\Views\\FormLogin.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\FormLogin.cs [Dise\u00F1o]",
               "RelativeToolTip": "wGestorPaqueteria\\Views\\FormLogin.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T15:52:44.529Z"
+              "WhenOpened": "2025-05-20T15:52:44.529Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 23,
               "Title": "SesionUsuario.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Utils\\SesionUsuario.cs",
               "RelativeDocumentMoniker": "wGestorPaqueteria\\Utils\\SesionUsuario.cs",
@@ -239,7 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 24,
               "Title": "DbConnectionSingleton.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Utils\\DbConnectionSingleton.cs",
               "RelativeDocumentMoniker": "wGestorPaqueteria\\Utils\\DbConnectionSingleton.cs",
@@ -251,20 +365,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "Paquete.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Entities\\Paquete.cs",
               "RelativeDocumentMoniker": "wGestorPaqueteria\\Entities\\Paquete.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Entities\\Paquete.cs",
               "RelativeToolTip": "wGestorPaqueteria\\Entities\\Paquete.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA9wB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAIAzwBAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T15:52:09.402Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Entities\\Cliente.cs",
               "RelativeDocumentMoniker": "wGestorPaqueteria\\Entities\\Cliente.cs",
@@ -272,19 +386,21 @@
               "RelativeToolTip": "wGestorPaqueteria\\Entities\\Cliente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T15:52:07.22Z"
+              "WhenOpened": "2025-05-20T15:52:07.22Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "base de datos.txt",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\base de datos.txt",
               "RelativeDocumentMoniker": "wGestorPaqueteria\\base de datos.txt",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\base de datos.txt",
               "RelativeToolTip": "wGestorPaqueteria\\base de datos.txt",
-              "ViewState": "AgIAANEAAAAAAAAAAAAAwHgAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAAwO8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-05-20T08:57:59.437Z"
+              "WhenOpened": "2025-05-20T08:57:59.437Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -294,65 +410,40 @@
               "RelativeDocumentMoniker": "wGestorPaqueteria\\Views\\Paquetes\\FormAgregarPaquete.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormAgregarPaquete.cs",
               "RelativeToolTip": "wGestorPaqueteria\\Views\\Paquetes\\FormAgregarPaquete.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T08:33:11.049Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "FormActualizarPaquete.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormActualizarPaquete.cs",
               "RelativeDocumentMoniker": "wGestorPaqueteria\\Views\\Paquetes\\FormActualizarPaquete.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormActualizarPaquete.cs",
               "RelativeToolTip": "wGestorPaqueteria\\Views\\Paquetes\\FormActualizarPaquete.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAawG4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T08:24:33.654Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "FormAgregarPaquete.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormAgregarPaquete.Designer.cs",
-              "RelativeDocumentMoniker": "wGestorPaqueteria\\Views\\Paquetes\\FormAgregarPaquete.Designer.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormAgregarPaquete.Designer.cs",
-              "RelativeToolTip": "wGestorPaqueteria\\Views\\Paquetes\\FormAgregarPaquete.Designer.cs",
-              "ViewState": "AgIAANgAAAAAAAAAAAAowPQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T08:20:14.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 15,
               "Title": "FormActualizarPaquete.Designer.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormActualizarPaquete.Designer.cs",
               "RelativeDocumentMoniker": "wGestorPaqueteria\\Views\\Paquetes\\FormActualizarPaquete.Designer.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormActualizarPaquete.Designer.cs",
               "RelativeToolTip": "wGestorPaqueteria\\Views\\Paquetes\\FormActualizarPaquete.Designer.cs",
-              "ViewState": "AgIAANQAAAAAAAAAAAAowO8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T08:20:02.901Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VistaPaquetes.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\VistaPaquetes.cs",
-              "RelativeDocumentMoniker": "wGestorPaqueteria\\Views\\Paquetes\\VistaPaquetes.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\VistaPaquetes.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "wGestorPaqueteria\\Views\\Paquetes\\VistaPaquetes.cs [Dise\u00F1o]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T08:25:33.802Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "FormActualizarPaquete.resx",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormActualizarPaquete.resx",
               "RelativeDocumentMoniker": "wGestorPaqueteria\\Views\\Paquetes\\FormActualizarPaquete.resx",
@@ -364,7 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "FormAgregarPaquete.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormAgregarPaquete.cs",
               "RelativeDocumentMoniker": "wGestorPaqueteria\\Views\\Paquetes\\FormAgregarPaquete.cs",
@@ -376,7 +467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "FormActualizarPaquete.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\wGestorPaqueteria\\wGestorPaqueteria\\Views\\Paquetes\\FormActualizarPaquete.cs",
               "RelativeDocumentMoniker": "wGestorPaqueteria\\Views\\Paquetes\\FormActualizarPaquete.cs",

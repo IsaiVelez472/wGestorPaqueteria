@@ -32,6 +32,7 @@
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblRol = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnModuloPaquetes = new System.Windows.Forms.Button();
             this.btnModuloClientes = new System.Windows.Forms.Button();
             this.btnModuloEmpleados = new System.Windows.Forms.Button();
@@ -42,12 +43,15 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.pnlClientes = new System.Windows.Forms.Panel();
+            this.btnAgregarCliente = new System.Windows.Forms.Button();
             this.dtgvClientes = new System.Windows.Forms.DataGridView();
             this.pnlAsignaciones = new System.Windows.Forms.Panel();
+            this.dtgvConductorAsignaciones = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.btnActualizarPaqueteConductor = new System.Windows.Forms.Button();
-            this.dtgvConductorAsignaciones = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.pnlEmpleados = new System.Windows.Forms.Panel();
+            this.dtgvEmpleados = new System.Windows.Forms.DataGridView();
+            this.btnCancelarPedido = new System.Windows.Forms.Button();
             this.panelHeader.SuspendLayout();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPaquetes)).BeginInit();
@@ -55,6 +59,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgvClientes)).BeginInit();
             this.pnlAsignaciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvConductorAsignaciones)).BeginInit();
+            this.pnlEmpleados.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvEmpleados)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -104,7 +110,20 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(174, 470);
             this.panelMenu.TabIndex = 1;
-            this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(10, 400);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(160, 40);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Salir";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnModuloPaquetes
             // 
@@ -136,8 +155,7 @@
             // 
             // btnModuloEmpleados
             // 
-            this.btnModuloEmpleados.BackColor = System.Drawing.Color.Gray;
-            this.btnModuloEmpleados.Enabled = false;
+            this.btnModuloEmpleados.BackColor = System.Drawing.Color.IndianRed;
             this.btnModuloEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModuloEmpleados.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnModuloEmpleados.ForeColor = System.Drawing.Color.White;
@@ -147,10 +165,11 @@
             this.btnModuloEmpleados.TabIndex = 2;
             this.btnModuloEmpleados.Text = "Empleados";
             this.btnModuloEmpleados.UseVisualStyleBackColor = false;
+            this.btnModuloEmpleados.Click += new System.EventHandler(this.btnModuloEmpleados_Click);
             // 
             // btnModuloSeguimiento
             // 
-            this.btnModuloSeguimiento.BackColor = System.Drawing.Color.Gray;
+            this.btnModuloSeguimiento.BackColor = System.Drawing.Color.Coral;
             this.btnModuloSeguimiento.Enabled = false;
             this.btnModuloSeguimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModuloSeguimiento.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
@@ -165,7 +184,7 @@
             // 
             // btnModuloAsignaciones
             // 
-            this.btnModuloAsignaciones.BackColor = System.Drawing.Color.Gray;
+            this.btnModuloAsignaciones.BackColor = System.Drawing.Color.Chocolate;
             this.btnModuloAsignaciones.Enabled = false;
             this.btnModuloAsignaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModuloAsignaciones.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
@@ -231,7 +250,7 @@
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnActualizar.ForeColor = System.Drawing.Color.White;
-            this.btnActualizar.Location = new System.Drawing.Point(517, 400);
+            this.btnActualizar.Location = new System.Drawing.Point(516, 400);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(150, 40);
             this.btnActualizar.TabIndex = 5;
@@ -241,13 +260,25 @@
             // 
             // pnlClientes
             // 
-            this.pnlClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.pnlClientes.BackColor = System.Drawing.Color.SteelBlue;
+            this.pnlClientes.Controls.Add(this.btnAgregarCliente);
             this.pnlClientes.Controls.Add(this.dtgvClientes);
-            this.pnlClientes.Location = new System.Drawing.Point(180, 56);
+            this.pnlClientes.Location = new System.Drawing.Point(180, 303);
             this.pnlClientes.Name = "pnlClientes";
-            this.pnlClientes.Size = new System.Drawing.Size(669, 409);
+            this.pnlClientes.Size = new System.Drawing.Size(258, 162);
             this.pnlClientes.TabIndex = 6;
             this.pnlClientes.Visible = false;
+            // 
+            // btnAgregarCliente
+            // 
+            this.btnAgregarCliente.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnAgregarCliente.Location = new System.Drawing.Point(522, 308);
+            this.btnAgregarCliente.Name = "btnAgregarCliente";
+            this.btnAgregarCliente.Size = new System.Drawing.Size(114, 41);
+            this.btnAgregarCliente.TabIndex = 7;
+            this.btnAgregarCliente.Text = "Agregar";
+            this.btnAgregarCliente.UseVisualStyleBackColor = true;
+            this.btnAgregarCliente.Click += new System.EventHandler(this.btnAgregarCliente_Click);
             // 
             // dtgvClientes
             // 
@@ -263,21 +294,37 @@
             this.dtgvClientes.ReadOnly = true;
             this.dtgvClientes.RowHeadersVisible = false;
             this.dtgvClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvClientes.Size = new System.Drawing.Size(570, 320);
+            this.dtgvClientes.Size = new System.Drawing.Size(611, 266);
             this.dtgvClientes.TabIndex = 6;
-            this.dtgvClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvClientes_CellContentClick);
             this.dtgvClientes.SelectionChanged += new System.EventHandler(this.dtgvClientes_SelectionChanged);
             // 
             // pnlAsignaciones
             // 
-            this.pnlAsignaciones.BackColor = System.Drawing.Color.Wheat;
+            this.pnlAsignaciones.BackColor = System.Drawing.Color.Coral;
             this.pnlAsignaciones.Controls.Add(this.dtgvConductorAsignaciones);
             this.pnlAsignaciones.Controls.Add(this.label1);
             this.pnlAsignaciones.Controls.Add(this.btnActualizarPaqueteConductor);
-            this.pnlAsignaciones.Location = new System.Drawing.Point(180, 60);
+            this.pnlAsignaciones.Location = new System.Drawing.Point(776, 345);
             this.pnlAsignaciones.Name = "pnlAsignaciones";
-            this.pnlAsignaciones.Size = new System.Drawing.Size(669, 398);
+            this.pnlAsignaciones.Size = new System.Drawing.Size(129, 113);
             this.pnlAsignaciones.TabIndex = 8;
+            // 
+            // dtgvConductorAsignaciones
+            // 
+            this.dtgvConductorAsignaciones.AllowUserToAddRows = false;
+            this.dtgvConductorAsignaciones.AllowUserToDeleteRows = false;
+            this.dtgvConductorAsignaciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvConductorAsignaciones.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dtgvConductorAsignaciones.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgvConductorAsignaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvConductorAsignaciones.Location = new System.Drawing.Point(13, 11);
+            this.dtgvConductorAsignaciones.MultiSelect = false;
+            this.dtgvConductorAsignaciones.Name = "dtgvConductorAsignaciones";
+            this.dtgvConductorAsignaciones.ReadOnly = true;
+            this.dtgvConductorAsignaciones.RowHeadersVisible = false;
+            this.dtgvConductorAsignaciones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvConductorAsignaciones.Size = new System.Drawing.Size(570, 320);
+            this.dtgvConductorAsignaciones.TabIndex = 11;
             // 
             // label1
             // 
@@ -301,44 +348,46 @@
             this.btnActualizarPaqueteConductor.TabIndex = 9;
             this.btnActualizarPaqueteConductor.Text = "Actualizar Paquete";
             this.btnActualizarPaqueteConductor.UseVisualStyleBackColor = false;
+            this.btnActualizarPaqueteConductor.Click += new System.EventHandler(this.btnActualizarPaqueteConductor_Click);
             // 
-            // dtgvConductorAsignaciones
+            // pnlEmpleados
             // 
-            this.dtgvConductorAsignaciones.AllowUserToAddRows = false;
-            this.dtgvConductorAsignaciones.AllowUserToDeleteRows = false;
-            this.dtgvConductorAsignaciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvConductorAsignaciones.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dtgvConductorAsignaciones.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgvConductorAsignaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvConductorAsignaciones.Location = new System.Drawing.Point(44, 16);
-            this.dtgvConductorAsignaciones.MultiSelect = false;
-            this.dtgvConductorAsignaciones.Name = "dtgvConductorAsignaciones";
-            this.dtgvConductorAsignaciones.ReadOnly = true;
-            this.dtgvConductorAsignaciones.RowHeadersVisible = false;
-            this.dtgvConductorAsignaciones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvConductorAsignaciones.Size = new System.Drawing.Size(570, 320);
-            this.dtgvConductorAsignaciones.TabIndex = 11;
+            this.pnlEmpleados.BackColor = System.Drawing.Color.IndianRed;
+            this.pnlEmpleados.Controls.Add(this.dtgvEmpleados);
+            this.pnlEmpleados.Location = new System.Drawing.Point(176, 354);
+            this.pnlEmpleados.Name = "pnlEmpleados";
+            this.pnlEmpleados.Size = new System.Drawing.Size(190, 111);
+            this.pnlEmpleados.TabIndex = 9;
             // 
-            // button1
+            // dtgvEmpleados
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(10, 400);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 40);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Salir";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.dtgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvEmpleados.Location = new System.Drawing.Point(29, 27);
+            this.dtgvEmpleados.Name = "dtgvEmpleados";
+            this.dtgvEmpleados.Size = new System.Drawing.Size(637, 269);
+            this.dtgvEmpleados.TabIndex = 0;
+            // 
+            // btnCancelarPedido
+            // 
+            this.btnCancelarPedido.BackColor = System.Drawing.Color.Purple;
+            this.btnCancelarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarPedido.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnCancelarPedido.ForeColor = System.Drawing.Color.White;
+            this.btnCancelarPedido.Location = new System.Drawing.Point(672, 400);
+            this.btnCancelarPedido.Name = "btnCancelarPedido";
+            this.btnCancelarPedido.Size = new System.Drawing.Size(150, 40);
+            this.btnCancelarPedido.TabIndex = 10;
+            this.btnCancelarPedido.Text = "Cancelar";
+            this.btnCancelarPedido.UseVisualStyleBackColor = false;
+            this.btnCancelarPedido.Click += new System.EventHandler(this.btnCancelarPedido_Click_1);
             // 
             // VistaPaquetes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ClientSize = new System.Drawing.Size(917, 470);
+            this.Controls.Add(this.pnlEmpleados);
             this.Controls.Add(this.pnlAsignaciones);
             this.Controls.Add(this.pnlClientes);
             this.Controls.Add(this.btnActualizar);
@@ -347,6 +396,7 @@
             this.Controls.Add(this.dgvPaquetes);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnCancelarPedido);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -363,6 +413,8 @@
             this.pnlAsignaciones.ResumeLayout(false);
             this.pnlAsignaciones.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvConductorAsignaciones)).EndInit();
+            this.pnlEmpleados.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvEmpleados)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -389,5 +441,9 @@
         private System.Windows.Forms.Button btnActualizarPaqueteConductor;
         private System.Windows.Forms.DataGridView dtgvConductorAsignaciones;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel pnlEmpleados;
+        private System.Windows.Forms.DataGridView dtgvEmpleados;
+        private System.Windows.Forms.Button btnAgregarCliente;
+        private System.Windows.Forms.Button btnCancelarPedido;
     }
 }

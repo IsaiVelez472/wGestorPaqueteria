@@ -48,10 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Cliente.cs" />
+    <Compile Include="Entities\Empleado.cs" />
     <Compile Include="Entities\Paquete.cs" />
     <Compile Include="Entities\Usuario.cs" />
     <Compile Include="Services\AuthServices.cs" />
     <Compile Include="Services\ClienteServices.cs" />
+    <Compile Include="Services\EmpleadoService.cs" />
     <Compile Include="Services\PaqueteServices.cs" />
     <Compile Include="Utils\DbConnectionSingleton.cs" />
     <Compile Include="Utils\SesionUsuario.cs" />
@@ -69,11 +71,23 @@
     <Compile Include="Views\Paquetes\FormActualizarPaquete.Designer.cs">
       <DependentUpon>FormActualizarPaquete.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Paquetes\FormAgregarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Paquetes\FormAgregarCliente.Designer.cs">
+      <DependentUpon>FormAgregarCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Paquetes\FormAgregarPaquete.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\Paquetes\FormAgregarPaquete.Designer.cs">
       <DependentUpon>FormAgregarPaquete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Paquetes\FormAsignarPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Paquetes\FormAsignarPedidos.Designer.cs">
+      <DependentUpon>FormAsignarPedidos.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Paquetes\VistaPaquetes.cs">
       <SubType>Form</SubType>
@@ -96,8 +110,14 @@
     <EmbeddedResource Include="Views\Paquetes\FormActualizarPaquete.resx">
       <DependentUpon>FormActualizarPaquete.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Paquetes\FormAgregarCliente.resx">
+      <DependentUpon>FormAgregarCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Paquetes\FormAgregarPaquete.resx">
       <DependentUpon>FormAgregarPaquete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Paquetes\FormAsignarPedidos.resx">
+      <DependentUpon>FormAsignarPedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Paquetes\VistaPaquetes.resx">
       <DependentUpon>VistaPaquetes.cs</DependentUpon>

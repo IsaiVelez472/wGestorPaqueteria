@@ -24,3 +24,5 @@ C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPa
 C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.csproj.CoreCompileInputs.cache
 C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.exe
 C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.pdb
+C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.Views.Paquetes.FormAgregarCliente.resources
+C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.Views.Paquetes.FormAsignarPedidos.resources

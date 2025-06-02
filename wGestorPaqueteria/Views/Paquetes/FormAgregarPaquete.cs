@@ -79,5 +79,10 @@ namespace wGestorPaqueteria.Views.Productos
             cmbEstado.Items.Add("Entregado");
             cmbEstado.SelectedIndex = 0;
         }
+
+        private void FormAgregarPaquete_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

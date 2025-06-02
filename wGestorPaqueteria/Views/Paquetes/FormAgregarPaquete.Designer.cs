@@ -240,8 +240,10 @@ namespace wGestorPaqueteria.Views.Productos
             this.Name = "FormAgregarPaquete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Paquete";
+            this.Load += new System.EventHandler(this.FormAgregarPaquete_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
 

@@ -103,7 +103,6 @@ namespace wGestorPaqueteria.Views.Paquetes
             cmbEstado.Items.Add("Recibido");
             cmbEstado.Items.Add("En tránsito");
             cmbEstado.Items.Add("Entregado");
-            
         }
 
         private void FormActualizarPaquete_Load(object sender, EventArgs e)
