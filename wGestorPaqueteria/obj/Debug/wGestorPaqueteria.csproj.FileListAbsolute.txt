@@ -26,3 +26,6 @@ C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPa
 C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.pdb
 C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.Views.Paquetes.FormAgregarCliente.resources
 C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.Views.Paquetes.FormAsignarPedidos.resources
+C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.Views.Seguimiento.ActualizarSeguimiento.resources
+C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.Views.Reportes.ReportesPaquetes.resources
+C:\Users\hp\Source\Repos\wGestorPaqueteria\wGestorPaqueteria\obj\Debug\wGestorPaqueteria.Views.Usuarios.CrearUsuarios.resources

@@ -52,6 +52,10 @@
             this.pnlEmpleados = new System.Windows.Forms.Panel();
             this.dtgvEmpleados = new System.Windows.Forms.DataGridView();
             this.btnCancelarPedido = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.panelHeader.SuspendLayout();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPaquetes)).BeginInit();
@@ -73,6 +77,7 @@
             this.panelHeader.Name = "panelHeader";
             this.panelHeader.Size = new System.Drawing.Size(743, 50);
             this.panelHeader.TabIndex = 0;
+            this.panelHeader.Paint += new System.Windows.Forms.PaintEventHandler(this.panelHeader_Paint);
             // 
             // lblUsuario
             // 
@@ -261,11 +266,12 @@
             // pnlClientes
             // 
             this.pnlClientes.BackColor = System.Drawing.Color.SteelBlue;
+            this.pnlClientes.Controls.Add(this.button5);
             this.pnlClientes.Controls.Add(this.btnAgregarCliente);
             this.pnlClientes.Controls.Add(this.dtgvClientes);
-            this.pnlClientes.Location = new System.Drawing.Point(180, 303);
+            this.pnlClientes.Location = new System.Drawing.Point(180, 281);
             this.pnlClientes.Name = "pnlClientes";
-            this.pnlClientes.Size = new System.Drawing.Size(258, 162);
+            this.pnlClientes.Size = new System.Drawing.Size(444, 184);
             this.pnlClientes.TabIndex = 6;
             this.pnlClientes.Visible = false;
             // 
@@ -301,13 +307,15 @@
             // pnlAsignaciones
             // 
             this.pnlAsignaciones.BackColor = System.Drawing.Color.Coral;
+            this.pnlAsignaciones.Controls.Add(this.button2);
             this.pnlAsignaciones.Controls.Add(this.dtgvConductorAsignaciones);
             this.pnlAsignaciones.Controls.Add(this.label1);
             this.pnlAsignaciones.Controls.Add(this.btnActualizarPaqueteConductor);
-            this.pnlAsignaciones.Location = new System.Drawing.Point(776, 345);
+            this.pnlAsignaciones.Location = new System.Drawing.Point(217, 39);
             this.pnlAsignaciones.Name = "pnlAsignaciones";
-            this.pnlAsignaciones.Size = new System.Drawing.Size(129, 113);
+            this.pnlAsignaciones.Size = new System.Drawing.Size(688, 419);
             this.pnlAsignaciones.TabIndex = 8;
+            this.pnlAsignaciones.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlAsignaciones_Paint);
             // 
             // dtgvConductorAsignaciones
             // 
@@ -353,10 +361,12 @@
             // pnlEmpleados
             // 
             this.pnlEmpleados.BackColor = System.Drawing.Color.IndianRed;
+            this.pnlEmpleados.Controls.Add(this.button4);
+            this.pnlEmpleados.Controls.Add(this.button3);
             this.pnlEmpleados.Controls.Add(this.dtgvEmpleados);
-            this.pnlEmpleados.Location = new System.Drawing.Point(176, 354);
+            this.pnlEmpleados.Location = new System.Drawing.Point(176, 380);
             this.pnlEmpleados.Name = "pnlEmpleados";
-            this.pnlEmpleados.Size = new System.Drawing.Size(190, 111);
+            this.pnlEmpleados.Size = new System.Drawing.Size(318, 85);
             this.pnlEmpleados.TabIndex = 9;
             // 
             // dtgvEmpleados
@@ -380,6 +390,53 @@
             this.btnCancelarPedido.Text = "Cancelar";
             this.btnCancelarPedido.UseVisualStyleBackColor = false;
             this.btnCancelarPedido.Click += new System.EventHandler(this.btnCancelarPedido_Click_1);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Crimson;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(518, 347);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(162, 35);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Reportes";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.button3.Location = new System.Drawing.Point(526, 333);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(114, 41);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "Agregar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.button4.Location = new System.Drawing.Point(376, 333);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(114, 41);
+            this.button4.TabIndex = 9;
+            this.button4.Text = "Eliminar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.button5.Location = new System.Drawing.Point(372, 308);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(114, 41);
+            this.button5.TabIndex = 10;
+            this.button5.Text = "Eliminar";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // VistaPaquetes
             // 
@@ -445,5 +502,9 @@
         private System.Windows.Forms.DataGridView dtgvEmpleados;
         private System.Windows.Forms.Button btnAgregarCliente;
         private System.Windows.Forms.Button btnCancelarPedido;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }

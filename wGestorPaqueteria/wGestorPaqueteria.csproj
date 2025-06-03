@@ -71,10 +71,10 @@
     <Compile Include="Views\Paquetes\FormActualizarPaquete.Designer.cs">
       <DependentUpon>FormActualizarPaquete.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Paquetes\FormAgregarCliente.cs">
+    <Compile Include="Views\Cliente\FormAgregarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Paquetes\FormAgregarCliente.Designer.cs">
+    <Compile Include="Views\Cliente\FormAgregarCliente.Designer.cs">
       <DependentUpon>FormAgregarCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Paquetes\FormAgregarPaquete.cs">
@@ -83,10 +83,22 @@
     <Compile Include="Views\Paquetes\FormAgregarPaquete.Designer.cs">
       <DependentUpon>FormAgregarPaquete.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Paquetes\FormAsignarPedidos.cs">
+    <Compile Include="Views\Reportes\ReportesPaquetes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Paquetes\FormAsignarPedidos.Designer.cs">
+    <Compile Include="Views\Reportes\ReportesPaquetes.Designer.cs">
+      <DependentUpon>ReportesPaquetes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Seguimiento\ActualizarSeguimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Seguimiento\ActualizarSeguimiento.Designer.cs">
+      <DependentUpon>ActualizarSeguimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Seguimiento\FormAsignarPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Seguimiento\FormAsignarPedidos.Designer.cs">
       <DependentUpon>FormAsignarPedidos.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Paquetes\VistaPaquetes.cs">
@@ -94,6 +106,12 @@
     </Compile>
     <Compile Include="Views\Paquetes\VistaPaquetes.Designer.cs">
       <DependentUpon>VistaPaquetes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Usuarios\CrearUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Usuarios\CrearUsuarios.Designer.cs">
+      <DependentUpon>CrearUsuarios.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Views\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -110,17 +128,26 @@
     <EmbeddedResource Include="Views\Paquetes\FormActualizarPaquete.resx">
       <DependentUpon>FormActualizarPaquete.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Paquetes\FormAgregarCliente.resx">
+    <EmbeddedResource Include="Views\Cliente\FormAgregarCliente.resx">
       <DependentUpon>FormAgregarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Paquetes\FormAgregarPaquete.resx">
       <DependentUpon>FormAgregarPaquete.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Paquetes\FormAsignarPedidos.resx">
+    <EmbeddedResource Include="Views\Reportes\ReportesPaquetes.resx">
+      <DependentUpon>ReportesPaquetes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Seguimiento\ActualizarSeguimiento.resx">
+      <DependentUpon>ActualizarSeguimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Seguimiento\FormAsignarPedidos.resx">
       <DependentUpon>FormAsignarPedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Paquetes\VistaPaquetes.resx">
       <DependentUpon>VistaPaquetes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Usuarios\CrearUsuarios.resx">
+      <DependentUpon>CrearUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

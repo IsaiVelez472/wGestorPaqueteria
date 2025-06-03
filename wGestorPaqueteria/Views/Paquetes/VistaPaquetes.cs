@@ -9,6 +9,9 @@ using wGestorPaqueteria.Services;
 using wGestorPaqueteria.Utils;
 using wGestorPaqueteria.Views.Paquetes;
 using wGestorPaqueteria.Views.Productos;
+using wGestorPaqueteria.Views.Reportes;
+using wGestorPaqueteria.Views.Seguimiento;
+using wGestorPaqueteria.Views.Usuarios;
 
 namespace wGestorPaqueteria.Views
 {
@@ -211,7 +214,8 @@ namespace wGestorPaqueteria.Views
             //pero si había una condición trajera los correspondientes
             List<AsignacionPaquete> paquetesAsignados = _paqueteService.ObtenerAsignaciones(Convert.ToInt32(usuario.IdUsuario));
             dtgvConductorAsignaciones.DataSource = paquetesAsignados;
-            btnModuloAsignaciones.Enabled = true;
+            btnModuloAsignaciones.Visible = false ;
+            button2.Visible = false;
             //Nuevamente creamos el boton
             Button btnActualizarSeguimiento = new Button();
             btnActualizarSeguimiento.Text = "Actualizar Seguimiento";
@@ -267,10 +271,16 @@ namespace wGestorPaqueteria.Views
                 var fila = dgvPaquetes.SelectedRows[0];
                 var paquete = (Paquete)fila.DataBoundItem;
 
+                if(usuario.Rol != "Administrador")
+                {
+                    ActualizarSeguimiento actualizarSeguimiento = new ActualizarSeguimiento(paquete);
+                    this.Hide();
+                    actualizarSeguimiento.Show();
+                    return;
+                }
                 FormActualizarPaquete formActualizar = new FormActualizarPaquete(paquete);
                 this.Hide();
                 formActualizar.Show();
-
             }
             else
             {
@@ -355,6 +365,7 @@ namespace wGestorPaqueteria.Views
                     //Y aquí cambiamos el estado
                     _paqueteService.CambiarEstado(paquete.PaqueteID, "Cancelado");
                     MessageBox.Show("Paquete a sido cancelado correctamente.");
+                    CargarVistas();
                 }
             }
             else
@@ -377,6 +388,74 @@ namespace wGestorPaqueteria.Views
 
         }
 
-       
+        private void pnlAsignaciones_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new ReportesPaquetes().Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new CrearUsuarios().Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (dtgvEmpleados.SelectedRows.Count > 0 && (usuario.Rol == "Administrador"))
+            {
+                var result = MessageBox.Show("¿Estás seguro de eliminar este Empleado?", "Confirmación", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    var fila = dtgvEmpleados.SelectedRows[0];
+                    int empleadoID = (int)fila.Cells["EmpleadoID"].Value;
+
+                    try
+                    {
+                        _empleadoService.EliminarEmpleado(empleadoID);
+                        MessageBox.Show("Empleado eliminado correctamente.");
+                        CargarVistas();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error al eliminar empleado: " + ex.Message);
+                    }
+                }
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (dtgvClientes.SelectedRows.Count > 0 && (usuario.Rol == "Administrador"))
+            {
+                var result = MessageBox.Show("¿Estás seguro de eliminar este Cliente?", "Confirmación", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    var fila = dtgvClientes.SelectedRows[0];
+                    int clienteID = (int)fila.Cells["ClienteID"].Value;
+
+                    try
+                    {
+                        _clienteService.EliminarCliente(clienteID);
+                        MessageBox.Show("Cliente eliminado correctamente.");
+                        CargarVistas();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error al eliminar cliente: " + ex.Message);
+                    }
+                }
+            }
+        }
+
+        private void panelHeader_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

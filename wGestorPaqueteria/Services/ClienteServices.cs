@@ -54,6 +54,22 @@ namespace wGestorPaqueteria.Services
             }
         }
 
-        
+        public void EliminarCliente(int clienteID)
+        {
+            var conn = DbConnectionSingleton.Instancia;
+            var cmd = new SqlCommand("sp_EliminarCliente", conn);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@ClienteID", clienteID);
+
+            try
+            {
+                conn.Open();
+                cmd.ExecuteNonQuery();
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
 }

@@ -72,8 +72,6 @@ namespace wGestorPaqueteria.Views.Paquetes
             txtValorDeclarado.Enabled = false;
             cmbRemitente.Enabled = false;
             cmbDestinatario.Enabled = false;
-
-            // cmbEstado queda habilitado
             cmbEstado.Enabled = true;
         }
 

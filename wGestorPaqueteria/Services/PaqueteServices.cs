@@ -84,6 +84,25 @@ namespace wGestorPaqueteria.Services
             }
         }
 
+        public bool RegistrarSeguimiento(int paqueteId, DateTime fechaEvento, string descripcion, string ubicacion)
+        {
+            var conn = DbConnectionSingleton.Instancia;
+            using (var cmd = new SqlCommand("sp_RegistrarEventoSeguimiento", conn))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@PaqueteID", paqueteId);
+                cmd.Parameters.AddWithValue("@FechaEvento", fechaEvento);
+                cmd.Parameters.AddWithValue("@DescripcionEvento", descripcion);
+                cmd.Parameters.AddWithValue("@Ubicacion", ubicacion);
+
+                conn.Open();
+                int rows = cmd.ExecuteNonQuery();
+                conn.Close();
+
+                return rows > 0;
+            }
+        }
+
         public void EliminarPaquete(int paqueteID)
         {
             var conn = DbConnectionSingleton.Instancia;
@@ -101,6 +120,45 @@ namespace wGestorPaqueteria.Services
                 conn.Close();
             }
         }
+
+        public bool AsignarPaqueteAConductor(int paqueteId, int empleadoId, out string error)
+        {
+            error = null;
+            var conn = DbConnectionSingleton.Instancia;
+
+            try
+            {
+                using (var cmd = new SqlCommand("sp_AsignarPaqueteConductor", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@PaqueteID", paqueteId);
+                    cmd.Parameters.AddWithValue("@EmpleadoID", empleadoId);
+
+                    conn.Open();
+                    int rows = cmd.ExecuteNonQuery();
+                    return rows > 0;
+                }
+            }
+            catch (SqlException ex)
+            {
+                // Detectar si el error vino del RAISERROR en SQL Server
+                if (ex.Number == 50000 && ex.Message.Contains("ya ha sido asignado"))
+                {
+                    error = "ya_asignado";
+                }
+                else
+                {
+                    error = "otro_error";
+                }
+                return false;
+            }
+            finally
+            {
+                if (conn.State == ConnectionState.Open)
+                    conn.Close();
+            }
+        }
+
 
         public List<AsignacionPaquete> ObtenerAsignaciones(int? empleadoId = null)
         {
@@ -135,6 +193,24 @@ namespace wGestorPaqueteria.Services
             }
 
             return paquetes;
-        } 
+        }
+
+
+        public DataTable GenerarReporteEnvios()
+        {
+            var conn = DbConnectionSingleton.Instancia;
+            using (SqlCommand cmd = new SqlCommand("sp_GenerarReporteEnvios", conn))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+
+                conn.Open();
+                adapter.Fill(dt);
+                conn.Close();
+                return dt;
+            }
+        }
     }
 }
