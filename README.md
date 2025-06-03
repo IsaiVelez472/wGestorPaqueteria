@@ -90,7 +90,30 @@ El sistema está basado en una estructura simple de tres entidades principales:
 ### 3. Vista de Paquetes
 ![image](https://github.com/user-attachments/assets/bd0d38b6-f70a-44c0-8837-eeb6bbcda91d)
 
+###4. Vista de Clientes
+![{FF2BF94D-107F-4C88-9315-69B565B5041D}](https://github.com/user-attachments/assets/a8a405d4-cbd0-4d55-81a8-91da4b9dbd76)
 
+###5. Vista Empleados
+![{51D5B619-4E80-4E25-AB25-C03E84E054FB}](https://github.com/user-attachments/assets/29349fa2-9e70-4fc9-9a05-d6a2ee053b0e)
+
+###6. Vista seguimiento
+![{38CE4583-CBF1-4B90-A78B-1A78393569FA}](https://github.com/user-attachments/assets/1ade025d-93d4-47ad-9b45-109c9c78ea65)
+
+###7. Vista Reporte
+![{77543BF8-24FB-4014-A3F0-9846FC05F5E0}](https://github.com/user-attachments/assets/c8a18b24-79a5-40e6-a8e0-24d8247aa73c)
+
+###8. Vista Asignaciones
+![{5AC65282-F05A-4A89-A6C3-4B9A8C9A27E0}](https://github.com/user-attachments/assets/0d289b86-8238-4cf9-8238-91c2cfb8be5e)
+
+###9.Vista Conductor
+![{039CE5C6-57C5-496F-946F-27E5A8C71F35}](https://github.com/user-attachments/assets/e53595fa-c243-4b64-a583-f85a1c761bd6)
+
+###10. Vista Despachador
+![{040872E5-2946-46E5-868C-997472AD9824}](https://github.com/user-attachments/assets/9b3c3ffd-a11a-4427-8cb3-a04c60480371)
+
+---
+##▶️ Video de ejecución
+https://drive.google.com/file/d/1lH7l2f4T2uyu0YHnouksKd2U8Ojcu15a/view?usp=sharing
 ---
 
 ## ▶️ Instrucciones para compilar y ejecutar
